@@ -1,0 +1,58 @@
+.tabs{
+    display: flex;
+    border-bottom: 2px solid #fb4f4f;
+}
+.tab{
+    border: 1px solid ;
+    padding: 10px 20px;
+    border: 1px solid #fb4f4f;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 5px 5px 0 0; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+.tab.active {
+    background-color: #fb4f4f;
+    color: white;
+}
+.tab-content {
+    padding: 20px;
+    border: 1px solid #fb4f4f;
+    border-radius: 0 0 5px 5px; 
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.que-item
+{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.que-question
+{
+    background-color: #fb4f4f;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.que-answer
+{
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #fb4f4f;
+    display: none;
+}
